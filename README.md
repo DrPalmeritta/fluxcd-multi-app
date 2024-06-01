@@ -72,25 +72,37 @@ fluxcd-repo-name/
 
 ```
 
-`apps/` - Directory for applications.<br />
-`  ` `production-app/, keycloak/, monitoring-app/` - Directories for each application.<br />
-`    ` `base/` - Contains common manifests and customizations applied to all environments.<br />
-`      `- `kustomization.yaml` - A Kustomize file describing the resources to be enabled.<br />
-`      `- `deployment.yaml` - A sample deployment manifest.<br />
-`  ` `overlays/` - Contains environment-specific customizations.<br />
-`    ` `dev/ and prod/` - Directories for different environments.<br />
-`     ` - `kustomization.yaml` - The Kustomize file for the given environment.<br />
-`     ` - `patch.yaml` - A patch to change the configuration specific to this environment.<br />
+`apps/` - Directory for applications.
+<ul>
+  <li>`production-app/, keycloak/, monitoring-app/` - Directories for each application.</li>
+  <li>`base/` - Contains common manifests and customizations applied to all environments.</li>
+    <ul>
+      <li>`kustomization.yaml` - A Kustomize file describing the resources to be enabled.</li>
+      <li>`deployment.yaml` - A sample deployment manifest.</li>
+    </ul>
+  <li>`overlays/` - Contains environment-specific customizations.</li>
+  <li>`dev/ and prod/` - Directories for different environments.</li>
+    <ul>
+      <li>`kustomization.yaml` - The Kustomize file for the given environment.</li>
+      <li>`patch.yaml` - A patch to change the configuration specific to this environment.</li>
+    </ul>
+</ul>
 
-`clusters/` - The directory for the clusters.<br />
-`  ` `dev/ and prod/` - Directories for the various clusters.<br />
-`   ` - `kustomization.yaml` - Kustomize file to apply applications to this cluster.<br />
-`   ` - `apps.yaml` - Application manifests for this cluster.<br />
+`clusters/` - The directory for the clusters.
+<ul>
+  <li>`dev/ and prod/` - Directories for the various clusters.</li>
+    <ul>
+      <li>`kustomization.yaml` - Kustomize file to apply applications to this cluster.</li>
+      <li>`apps.yaml` - Application manifests for this cluster.</li>
+    </ul>
+</ul>
 
-`flux/` - The directory for installing FluxCD.<br />
-`  ` - `gotk-components.yaml` - Flux components.<br />
-`  ` - `gotk-sync.yaml` - Flux synchronization configuration with the repository.<br />
-`  ` - `kustomization.yaml` - Kustomize file for Flux installation.<br />
+`flux/` - The directory for installing FluxCD.
+<ul>
+  <li>`gotk-components.yaml` - Flux components.</li>
+  <li>`gotk-sync.yaml` - Flux synchronization configuration with the repository.</li>
+  <li>`kustomization.yaml` - Kustomize file for Flux installation.</li>
+</ul>
 
 ## Authors
 
