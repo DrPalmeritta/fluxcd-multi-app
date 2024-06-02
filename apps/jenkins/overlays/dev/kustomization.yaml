@@ -4,6 +4,7 @@ kind: Kustomization
 metadata:
   name: jenkins
   namespace: jenkins
+namePrefix: jenkins-
 bases:
   - ../../base
 patchesStrategicMerge:
