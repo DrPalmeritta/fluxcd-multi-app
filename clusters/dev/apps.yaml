@@ -4,6 +4,7 @@ kind: Kustomization
 metadata:
   name: apps
   namespace: flux-system
+namePrefix: apps-dev-
 resources:
   - ../../apps/jenkins/overlays/dev
   - ../../apps/keycloak/overlays/dev
