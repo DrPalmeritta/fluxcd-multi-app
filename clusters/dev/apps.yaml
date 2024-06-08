@@ -5,7 +5,7 @@ metadata:
   name: apps
   namespace: flux-system
 resources:
-  - ../../apps/jenkins/overlays/dev
-  # - ../../apps/jenkins/base/dev
+  # - ../../apps/jenkins/overlays/dev
+  - ../../apps/jenkins/base/dev
   # - ../../apps/keycloak/base/dev
   # - ../../apps/prometheus-stack/base/dev
