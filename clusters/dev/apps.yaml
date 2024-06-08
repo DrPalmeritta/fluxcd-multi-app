@@ -4,10 +4,7 @@ kind: Kustomization
 metadata:
   name: apps
   namespace: flux-system
-  labels:
-    app: system
 resources:
   - ../../apps/jenkins/base/dev
-  # - ../../apps/jenkins/overlays/dev
-  # - ../../apps/keycloak/overlays/dev
-  # - ../../apps/prometheus-stack/overlays/dev
+  # - ../../apps/keycloak/base/dev
+  # - ../../apps/prometheus-stack/base/dev

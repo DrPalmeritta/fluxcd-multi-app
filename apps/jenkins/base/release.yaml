@@ -4,8 +4,6 @@ kind: HelmRelease
 metadata:
   name: jenkins
   namespace: jenkins
-  labels:
-    app: jenkins
 spec:
   releaseName: jenkins
   chart:
