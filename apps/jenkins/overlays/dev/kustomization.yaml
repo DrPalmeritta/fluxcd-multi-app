@@ -6,5 +6,5 @@ metadata:
   namespace: jenkins
 bases:
   - ../../base
-patchesStrategicMerge:
-  - patch.yaml
+# patchesStrategicMerge:
+#   - patch.yaml
