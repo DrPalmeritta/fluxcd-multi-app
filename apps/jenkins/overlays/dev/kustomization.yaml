@@ -4,7 +4,9 @@ kind: Kustomization
 metadata:
   name: jenkins
   namespace: jenkins
+  labels:
+    app: jenkins
 bases:
   - ../../base
-# patchesStrategicMerge:
-#   - patch.yaml
+patchesStrategicMerge:
+  - patch.yaml

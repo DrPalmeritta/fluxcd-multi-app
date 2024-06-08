@@ -4,6 +4,8 @@ kind: Kustomization
 metadata:
   name: jenkins
   namespace: jenkins
+  labels:
+    app: jenkins
 resources:
   - namespace.yaml
   - repository.yaml
