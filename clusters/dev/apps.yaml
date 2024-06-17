@@ -7,4 +7,5 @@ metadata:
 resources:
   - ../../apps/jenkins/base/dev
   - ../../apps/keycloak/base/dev
+  - ../../apps/nextjs-demo/base/dev
   # - ../../apps/prometheus-stack/base/dev
