@@ -5,5 +5,5 @@ metadata:
   name: jenkins
   namespace: jenkins
 spec:
-  interval: 5m
+  interval: 1m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
