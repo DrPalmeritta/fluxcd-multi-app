@@ -5,7 +5,7 @@ metadata:
   name: apps
   namespace: flux-system
 resources:
-  - ../apps/jenkins/base
-  # - ../../apps/keycloak/base
-  # - ../../apps/nextjs-demo/base
+  - ../../apps/jenkins/base
+  - ../../apps/keycloak/base
+  - ../../apps/nextjs-demo/base
   # - ../../apps/prometheus-stack/base
