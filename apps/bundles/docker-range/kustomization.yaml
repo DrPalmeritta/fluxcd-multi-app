@@ -2,13 +2,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+  - ../../base/istio
   - ../../base/jenkins
   - ../../base/victoria-metrics-k8s-stack
   # - ../../base/flux-monitoring #TODO future work
   # - ../../base/kubelinks #TODO future work
   # - ../../base/metrics-server #TODO future work
   # - ../../base/blackbox-exporter #TODO future work
-  - ../../base/istio
   # - ../../base/helm-exporter #TODO future work
   # - ../../base/cert-manager #TODO future work
   # - ../../base/external-secrets #TODO future work

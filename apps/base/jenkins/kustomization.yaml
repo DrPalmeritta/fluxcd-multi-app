@@ -5,5 +5,5 @@ namespace: jenkins
 resources:
   - namespace.yaml
   - helm-release.yaml
-  - virtual-service.yaml
+  # - virtual-service.yaml
   # - gateway.yaml
