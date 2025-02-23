@@ -1,9 +1,0 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: nextjs-demo
-  namespace: nextjs
-spec:
-  interval: 5m
-  url: https://drpalmeritta.github.io/palmeritta-helm-repo

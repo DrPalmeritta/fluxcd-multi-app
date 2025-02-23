@@ -1,9 +1,0 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: jenkins
-  namespace: jenkins
-spec:
-  interval: 1m
-  url: https://drpalmeritta.github.io/palmeritta-helm-repo

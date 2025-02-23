@@ -1,0 +1,21 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base/jenkins
+  - ../../base/victoria-metrics-k8s-stack
+  # - ../../base/flux-monitoring #TODO future work
+  # - ../../base/kubelinks #TODO future work
+  # - ../../base/metrics-server #TODO future work
+  # - ../../base/blackbox-exporter #TODO future work
+  # - ../../base/istio #TODO future work
+  # - ../../base/helm-exporter #TODO future work
+  # - ../../base/cert-manager #TODO future work
+  # - ../../base/external-secrets #TODO future work
+  # - ../../base/loki #???
+  # - ../../base/oomkill-exporter #???
+  # - ../../base/x509-certificate-exporter #???
+  # - ../../base/httpbin #???
+  # - ../../base/kro #???
+patches:
+  - path: range.yaml

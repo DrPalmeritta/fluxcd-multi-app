@@ -4,5 +4,4 @@ kind: Kustomization
 namespace: prometheus-stack
 resources:
   - namespace.yaml
-  - repository.yaml
   - release.yaml
