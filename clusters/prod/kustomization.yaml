@@ -4,5 +4,3 @@ kind: Kustomization
 resources:
   ## Base bundle
   - ../../apps/bundles/docker-stable
-patches:
-  - path: victoria-metrics-k8s-stack/helm-release.yaml
