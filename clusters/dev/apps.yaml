@@ -5,4 +5,4 @@ metadata:
   name: apps
   namespace: flux-system
 resources:
-  - ../../apps/jenkins/base
+  - ../../../apps/jenkins/base
