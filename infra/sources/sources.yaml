@@ -4,7 +4,6 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: istio
-  namespace: istio-system
 spec:
   interval: 1m
   url: https://istio-release.storage.googleapis.com/charts
@@ -15,7 +14,6 @@ spec:
 # kind: HelmRepository
 # metadata:
 #   name: istio
-#   namespace: istio-ingress
 # spec:
 #   interval: 1m
 #   url: https://istio-release.storage.googleapis.com/charts
@@ -26,7 +24,6 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: jenkins
-  namespace: jenkins
 spec:
   interval: 1m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -37,7 +34,6 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: keycloak
-  namespace: keycloak
 spec:
   interval: 5m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -48,7 +44,6 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: nextjs-demo
-  namespace: nextjs
 spec:
   interval: 5m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -59,7 +54,6 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: kube-prometheus-stack
-  namespace: prometheus-stack
 spec:
   interval: 5m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -70,7 +64,6 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: vm
-  namespace: monitoring
 spec:
   interval: 5m
   url: https://victoriametrics.github.io/helm-charts/
