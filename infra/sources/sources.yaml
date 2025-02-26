@@ -20,23 +20,23 @@
 #   interval: 1m
 #   url: https://istio-release.storage.googleapis.com/charts
 
-# ---
-# apiVersion: source.toolkit.fluxcd.io/v1
-# kind: HelmRepository
-# metadata:
-#   name: teleport
-# spec:
-#   interval: 120m
-#   url: https://charts.releases.teleport.dev
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: teleport
+spec:
+  interval: 120m
+  url: https://charts.releases.teleport.dev
 
-# ---
-# apiVersion: source.toolkit.fluxcd.io/v1
-# kind: HelmRepository
-# metadata:
-#   name: rocketchat
-# spec:
-#   interval: 120m
-#   url: https://rocketchat.github.io/helm-charts
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: rocketchat
+spec:
+  interval: 120m
+  url: https://rocketchat.github.io/helm-charts
 
 # JENKINS REPOSITORY
 ---

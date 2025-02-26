@@ -1,16 +1,17 @@
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
-kind: Kustomization
-metadata:
-  name: sources
-  namespace: flux-system
-spec:
-  interval: 10m0s
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
-  path: ./clusters/dev/infra/sources
-  prune: true
+#TODO - ресурсы установятся но с NS flux-system, из-за чего найти их не получится для конечных APP
+# ---
+# apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+# kind: Kustomization
+# metadata:
+#   name: sources
+#   namespace: flux-system
+# spec:
+#   interval: 10m0s
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system
+#   path: ./clusters/dev/infra/sources
+#   prune: true
 
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2

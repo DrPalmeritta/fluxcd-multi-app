@@ -5,6 +5,7 @@ resources:
   ## Base
   - namespace.yaml
   - helm-release.yaml
+  - helm-repo.yaml
   
   ## Extra rules
   #- vm-rule.yaml

@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: jenkins
 resources:
   - namespace.yaml
+  - helm-repo.yaml
   - helm-release.yaml
   # - virtual-service.yaml
   # - gateway.yaml
