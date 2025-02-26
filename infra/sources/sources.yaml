@@ -1,3 +1,4 @@
+# ISTIO BASE/ISTIOD REPOSITORY
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
@@ -8,18 +9,16 @@ spec:
   interval: 1m
   url: https://istio-release.storage.googleapis.com/charts
 
-# ISTIO BASE/ISTIOD REPOSITORY
-
 # ISTIO INGRESS REPOSITORY
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
-metadata:
-  name: istio
-  namespace: istio-ingress
-spec:
-  interval: 1m
-  url: https://istio-release.storage.googleapis.com/charts
+# ---
+# apiVersion: source.toolkit.fluxcd.io/v1
+# kind: HelmRepository
+# metadata:
+#   name: istio
+#   namespace: istio-ingress
+# spec:
+#   interval: 1m
+#   url: https://istio-release.storage.googleapis.com/charts
 
 # JENKINS REPOSITORY
 ---
