@@ -5,7 +5,7 @@ resources:
   - helm-release-base.yaml
   - helm-release-istiod.yaml
   - helm-istio-gw-private.yaml
-  #- helm-istio-gw-public.yaml
-  - telemetry.yaml
-  #- monitors.yaml
-  #- prometheusrule.yaml
+  # - helm-istio-gw-public.yaml
+  # - telemetry.yaml
+  # - monitors.yaml
+  # - prometheusrule.yaml
