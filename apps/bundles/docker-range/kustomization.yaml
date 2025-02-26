@@ -10,7 +10,7 @@ resources:
   # - ../../base/metrics-server #TODO future work
   # - ../../base/blackbox-exporter #TODO future work
   # - ../../base/helm-exporter #TODO future work
-  # - ../../base/cert-manager #TODO future work
+  - ../../base/cert-manager
   # - ../../base/external-secrets #TODO future work
   # - ../../base/loki #???
   # - ../../base/oomkill-exporter #???
