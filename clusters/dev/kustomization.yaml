@@ -4,7 +4,9 @@ kind: Kustomization
 resources:
   ## Base bundle
   - ../../apps/bundles/docker-range
-  
+  - 00-crds.yaml
+  - 01-infra.yaml
+  - 02-istio-rate-limits.yaml
   ## Customs
   # - flux-promotion
   - istio
