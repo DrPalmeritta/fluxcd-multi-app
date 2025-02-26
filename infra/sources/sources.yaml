@@ -20,16 +20,6 @@ spec:
   interval: 1m
   url: https://istio-release.storage.googleapis.com/charts
 
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
-metadata:
-  name: istio
-  namespace: flux-system
-spec:
-  interval: 1m
-  url: https://istio-release.storage.googleapis.com/charts
-
 # JENKINS REPOSITORY
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
