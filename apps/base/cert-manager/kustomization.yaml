@@ -5,7 +5,7 @@ resources:
   - helm-repo.yaml
   - helm-release.yaml
   # mixin rules and dashboard
-  - vm-rule.yaml
+  # - vm-rule.yaml
 namespace: cert-manager
 configMapGenerator:
   - name: cert-manager-grafana-dashboards
