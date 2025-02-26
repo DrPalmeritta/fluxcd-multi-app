@@ -24,7 +24,7 @@ spec:
   dependsOn:
     - name: fluxcd-gitops-crds
   interval: 10m
-  path: ./clusters/dev
+  path: ./ #clusters/dev
   prune: true
   sourceRef:
     kind: GitRepository
