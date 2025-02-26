@@ -22,12 +22,12 @@ spec:
         name: istio
         namespace: istio-system
 
-  # install:
-  #   crds: Skip
-  #   remediation:
-  #     retries: 3
-  # upgrade:
-  #   crds: Skip
+  install:
+    crds: Skip
+    remediation:
+      retries: 3
+  upgrade:
+    crds: Skip
 
   # Default values: https://github.com/istio/istio/blob/master/manifests/charts/gateway/values.yaml
 
