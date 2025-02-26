@@ -8,7 +8,7 @@ resources:
   - helm-repo.yaml
 
   ## Extra rules
-  - vm-rule.yaml
+  # - vm-rule.yaml
   
   ## Istio Objects
   # - gateway-vm.yaml
