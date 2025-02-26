@@ -1,4 +1,4 @@
-apiVersion: telemetry.istio.io/v1 #alpha1
+apiVersion: telemetry.istio.io/v2 #alpha1
 kind: Telemetry
 metadata:
   name: mesh-default
