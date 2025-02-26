@@ -16,11 +16,11 @@ spec:
       interval: 5m
   releaseName: victoria-metrics-k8s-stack
   install:
-    crds: Skip
+    crds: Create
     remediation:
       retries: 3
   upgrade:
-    crds: Skip
+    crds: CreateReplace
     remediation:
       retries: 3
   # additional values file with KSM values
@@ -32,12 +32,12 @@ spec:
   values:
     ## disable vm operator crds, managed separetly by gitops-crds repo
     crds:
-      enabled: false
+      enabled: true
     victoria-metrics-operator:
       admissionWebhooks:
-        enable: false
+        enable: true
       crd:
-        create: false
+        create: true
         cleanup:
           enabled: true
       operator:
@@ -50,7 +50,7 @@ spec:
       #     cpu: 14m
       #     memory: 100Mi
     kube-state-metrics:
-      prometheusScrape: false
+      prometheusScrape: true
       selfMonitor:
         enabled: true
       # resources:
