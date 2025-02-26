@@ -44,7 +44,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: jenkins
-  # namespace: jenkins
+  namespace: jenkins
 spec:
   interval: 1m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -66,6 +66,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: nextjs-demo
+  namespace: nextjs
 spec:
   interval: 5m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -76,6 +77,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
   name: kube-prometheus-stack
+  namespace: prometheus-stack
 spec:
   interval: 5m
   url: https://drpalmeritta.github.io/palmeritta-helm-repo
@@ -86,6 +88,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: vm
+  namespace: monitoring
 spec:
   interval: 5m
   url: https://victoriametrics.github.io/helm-charts/
