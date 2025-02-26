@@ -4,6 +4,10 @@ metadata:
   name: istiod
   namespace: istio-system
 spec:
+  interval: 5m
+  dependsOn:
+    - name: istio-base
+      namespace: istio-system
   releaseName: istiod
   chart:
     spec:
@@ -12,13 +16,14 @@ spec:
         kind: HelmRepository
         name: istio
         namespace: istio-system
-  interval: 5m
-  install:
-    crds: Skip
-    remediation:
-      retries: 3
-  upgrade:
-    crds: Skip
+
+  # install:
+  #   crds: Skip
+  #   remediation:
+  #     retries: 3
+  # upgrade:
+  #   crds: Skip
+
   # Default values
   values:
     pilot:

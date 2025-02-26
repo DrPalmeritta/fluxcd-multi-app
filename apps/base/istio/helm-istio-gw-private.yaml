@@ -5,6 +5,12 @@ metadata:
   name: istio-ingress-private
   namespace: istio-ingress
 spec:
+  interval: 5m
+  dependsOn:
+    - name: istio-base
+      namespace: istio-system
+    - name: istiod
+      namespace: istio-system
   releaseName: istio-ingress-private
   chart:
     spec:
@@ -13,14 +19,16 @@ spec:
         kind: HelmRepository
         name: istio
         namespace: istio-system
-  interval: 5m
-  install:
-    crds: Skip
-    remediation:
-      retries: 3
-  upgrade:
-    crds: Skip
+
+  # install:
+  #   crds: Skip
+  #   remediation:
+  #     retries: 3
+  # upgrade:
+  #   crds: Skip
+
   # Default values: https://github.com/istio/istio/blob/master/manifests/charts/gateway/values.yaml
+
   values:
     autoscaling:
       minReplicas: 1
