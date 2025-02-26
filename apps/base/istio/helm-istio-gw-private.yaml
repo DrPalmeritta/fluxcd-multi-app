@@ -4,6 +4,8 @@ kind: HelmRelease
 metadata:
   name: istio-ingress-private
   namespace: istio-ingress
+  labels:
+    app.kubernetes.io/part-of: istio
 spec:
   interval: 5m
   dependsOn:

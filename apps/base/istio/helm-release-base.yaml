@@ -4,8 +4,14 @@ kind: HelmRelease
 metadata:
   name: istio-base
   namespace: istio-system
+  labels:
+    app.kubernetes.io/part-of: istio
 spec:
   interval: 5m
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
   chart:
     spec:
       chart: base
