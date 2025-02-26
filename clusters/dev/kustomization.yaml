@@ -2,8 +2,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - infra.yaml
+  ## Base bundle
   - ../../apps/bundles/docker-range
-  - rbac
-  - flux-system
-  - infra/flux-ks.yaml
+  
+  ## Customs
+  # - flux-promotion
+  - istio
+  # - pg-airflow
+  # - minio-loki
+  # - redis
+  # - clickhouse
+patches:
+  - path: victoria-metrics-k8s-stack/helm-release.yaml

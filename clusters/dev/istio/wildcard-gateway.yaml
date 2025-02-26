@@ -1,4 +1,3 @@
----
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:
@@ -9,13 +8,19 @@ spec:
     istio: ingress-private
   servers:
     - hosts:
-        - links.${cluster_subdomain}
+        # - links.${cluster_subdomain}
         - grafana.${cluster_subdomain}
         - vmagent.${cluster_subdomain}
         - vmalert.${cluster_subdomain}
         - vmalertmanager.${cluster_subdomain}
         - vmsingle.${cluster_subdomain}
         - jenkins.${cluster_subdomain}
+        # - argocd.${cluster_subdomain}
+        # - pgadmin.${cluster_subdomain}
+        # - airflow.${cluster_subdomain}
+        # - capacitor.${cluster_subdomain}
+        # - minio-loki.${cluster_subdomain}
+        - httpbin.${cluster_subdomain}
       port:
         name: http
         number: 80
@@ -23,13 +28,19 @@ spec:
       tls:
         httpsRedirect: true
     - hosts:
-        - links.${cluster_subdomain}
+        # - links.${cluster_subdomain}
         - grafana.${cluster_subdomain}
         - vmagent.${cluster_subdomain}
         - vmalert.${cluster_subdomain}
         - vmalertmanager.${cluster_subdomain}
         - vmsingle.${cluster_subdomain}
         - jenkins.${cluster_subdomain}
+        # - argocd.${cluster_subdomain}
+        # - pgadmin.${cluster_subdomain}
+        # - airflow.${cluster_subdomain}
+        # - capacitor.${cluster_subdomain}
+        # - minio-loki.${cluster_subdomain}
+        - httpbin.${cluster_subdomain}
       port:
         name: https
         number: 443
