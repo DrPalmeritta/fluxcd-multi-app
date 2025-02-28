@@ -15,5 +15,5 @@ resources:
   # - minio-loki
   # - redis
   # - clickhouse
-patches:
-  - path: victoria-metrics-k8s-stack/helm-release.yaml
+# patches:
+#   - path: victoria-metrics-k8s-stack/helm-release.yaml
