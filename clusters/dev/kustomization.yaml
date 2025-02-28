@@ -5,15 +5,15 @@ resources:
   ## Base bundle
   - flux-system
   - ../../apps/bundles/docker-range
-  - 00-crds.yaml
-  - 01-infra.yaml
-  - 02-istio-rate-limits.yaml
+  #- 00-crds.yaml
+  #- 01-infra.yaml
+  #- 02-istio-rate-limits.yaml
   ## Customs
   # - flux-promotion
-  - istio
+  #- istio
   # - pg-airflow
   # - minio-loki
   # - redis
   # - clickhouse
-# patches:
-#   - path: victoria-metrics-k8s-stack/helm-release.yaml
+patches:
+  - path: victoria-metrics-k8s-stack/helm-release.yaml
